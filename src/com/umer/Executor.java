@@ -15,7 +15,7 @@ public class Executor {
         generateGapInConsole();
 
         FirstNonRepeatingCharacterService service = new FirstNonRepeatingCharacterService();
-        String inputToCheck = "swiss";
+        String inputToCheck = null;// "swiss";
         Character result = service.findFirstNonRepeatingCharacter(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
@@ -25,9 +25,9 @@ public class Executor {
     private static void displayResult(String inputToCheck, Character result) {
         if (result != null) {
             System.out
-                    .println("The first non repating character in the input string: " + inputToCheck + " is:" + result);
+                    .println("The first non repating character in the input string:" + inputToCheck + " is:" + result);
         } else {
-            System.out.println("There is no non-repeating character in the input string: " + inputToCheck);
+            System.out.println("There is no non-repeating character in the input string:" + inputToCheck);
         }
     }
 

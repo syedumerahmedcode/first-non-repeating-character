@@ -3,6 +3,7 @@ package com.umer.service;
 public class FirstNonRepeatingCharacterService {
 
     public Character findFirstNonRepeatingCharacter(String inputToCheck) {
+        Character firstNonRepeatingCharacter = null;
         // Precheck 1: If inputToCheck=null, return null.
 
         // Precheck 2: If inputToCheck=""(empty string), return null.-->Reason: minimum
@@ -10,6 +11,9 @@ public class FirstNonRepeatingCharacterService {
 
         // Precheck 3: If inputToCheck.legth=1([just one charcter]), return
         // null.-->Reason: same as pre check 2
+        if (inputToCheck == null || inputToCheck.isBlank() || inputToCheck.length() <= 1) {
+            return firstNonRepeatingCharacter;
+        }
 
         // Step 1: Create an array to record the occurance of each character
         // NOTE: We assume that the input string contains ASCII characters
@@ -22,7 +26,7 @@ public class FirstNonRepeatingCharacterService {
         // character*.
 
         // Step 4: Return null if no non-repeating characters are found.
-        return null;
+        return firstNonRepeatingCharacter;
     }
 
 }
