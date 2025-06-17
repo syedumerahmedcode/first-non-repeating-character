@@ -7,8 +7,8 @@ public class Executor {
         /**
          * Write a method to find the first non-repeating character in a string.
          * 
-         * input = "swiss";
-         * Output: w
+         * inputToCheck = "swiss";
+         * result: w
          */
         generateGapInConsole();
         System.out.println("Find the first non-repeating character in a string.");

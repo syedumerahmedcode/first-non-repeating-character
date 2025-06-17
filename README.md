@@ -1,18 +1,64 @@
-## Getting Started
+# first-non-repeating-character
 
-This is a test change in the readme file.
+## Table of content
 
-## Folder Structure
+- [Objective](#objective)
+- [Explanation](#explanation)
+- [Complexity Analysis](#complexity-analysis)
+- [Edge Cases](#edge-cases)
+- [Technologies Used](#technologies-used)
+- [Commands](#commands)
+- [Contribution](#contribution)
+- [Contact Information](#contact-information)
 
-The workspace contains two folders by default, where:
+## Objective
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Given a input string `inputToCheck`, find the first non-repeating character in it. A non-repeating character is one that appears only once in the string.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+For Example
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+```java
+Input
 
-## Dependency Management
+inputToCheck = "swiss";
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Output
+
+result: w
+```
+
+## Explanation
+
+> [Explanation on Youtube](Please insert working link here)
+
+## Complexity Analysis
+
+### Time Complexity
+
+**O(xyz)** Breif explanation about it.
+
+## Edge Cases
+
+- **Edge case 1:** Explanation of the edge case 1.
+- **Edge case 2:** Explanation of the edge case 2.
+- **Edge case 3:** Explanation of the edge case 3.
+
+further notes if necessary...
+
+NOTE: Also add brief description about the second logic approach(which is still to be implemented).
+
+## Technologies Used
+
+- Java 11
+
+## Commands
+
+To compile and test, please checkout the project on your local machine and run _main method_ in the Executor class.
+
+## Contribution
+
+Feature requests, issues, pull requests and questions are welcome.
+
+## Contact Information
+
+How to reach me? At [github specific gmail account](mailto:syedumerahmedcode@gmail.com?subject=[GitHub]%20Hello%20from%20Github).
