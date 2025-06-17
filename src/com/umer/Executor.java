@@ -14,9 +14,46 @@ public class Executor {
         System.out.println("Find the first non-repeating character in a string.");
         generateGapInConsole();
 
+        // Happy path input
         FirstNonRepeatingCharacterService service = new FirstNonRepeatingCharacterService();
-        String inputToCheck = null;// "swiss";
+        String inputToCheck = "swiss";
         Character result = service.findFirstNonRepeatingCharacter(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
+        // Another happy path input
+        inputToCheck = "racecar";
+        result = service.findFirstNonRepeatingCharacter(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
+        // Edge case - all charcters appear more than once
+        inputToCheck = "noon";
+        result = service.findFirstNonRepeatingCharacter(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
+        // Edge case - only one character in the input string
+        inputToCheck = "n";
+        result = service.findFirstNonRepeatingCharacter(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
+        // Edge case - empty string
+        inputToCheck = "";
+        result = service.findFirstNonRepeatingCharacter(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
+        // Edge case - null
+        inputToCheck = null;
+        result = service.findFirstNonRepeatingCharacter(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
+        // Edge case - string containing only whitespaces
+        inputToCheck = "   ";
+        result = service.findFirstNonRepeatingCharacter(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 

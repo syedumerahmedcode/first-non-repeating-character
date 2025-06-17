@@ -17,13 +17,23 @@ public class FirstNonRepeatingCharacterService {
 
         // Step 1: Create an array to record the occurance of each character
         // NOTE: We assume that the input string contains ASCII characters
+        int[] characterCount = new int[256];
 
         // Step 2: Count the occurrance of each character
+        for (char c : inputToCheck.toCharArray()) {
+            characterCount[c]++;
+        }
 
         // Step 3: Check for the first occurrance of a character where count =
         // 1(non-repeating).
         // Side note: if count >1 then the check is effectively for the first *Repeating
         // character*.
+        for (char c : inputToCheck.toCharArray()) {
+            if (characterCount[c] == 1) {
+                firstNonRepeatingCharacter = c;
+                return firstNonRepeatingCharacter;
+            }
+        }
 
         // Step 4: Return null if no non-repeating characters are found.
         return firstNonRepeatingCharacter;
