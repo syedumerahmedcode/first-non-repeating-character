@@ -49,7 +49,20 @@ public class FirstNonRepeatingCharacterService {
 
         /**
          * Step 1: Using LinkedHashmap to store character and their counts.
-         * Why a LinkedHashmap?-->
+         * Why a LinkedHashmap?--> We used LinkedHashmap instead of Hashmap because of
+         * getOrDefault() since is used to retrieve the value associated with a
+         * specified key in the LinkedHashMap. If the key is not present in the map, it
+         * returns a specified default value instead of 'null'.In our example, we return
+         * '0' as default.
+         * 
+         * Benefits
+         * 
+         * Avoiding NullPointerException: By providing a default value, you can avoid
+         * NullPointerException that might occur if you try to use a null value.
+         * 
+         * Simplified Code: It simplifies the code by eliminating the need for
+         * additional checks to see if a key exists before retrieving its value.
+         * 
          */
         LinkedHashMap<Character, Integer> characterCount = new LinkedHashMap<>();
 

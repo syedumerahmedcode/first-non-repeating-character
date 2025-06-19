@@ -10,6 +10,7 @@ public class Executor {
          * inputToCheck = "swiss";
          * result: w
          */
+
         generateGapInConsole();
         System.out.println("Find the first non-repeating character in a string.");
         generateGapInConsole();
