@@ -7,17 +7,8 @@ public class FirstNonRepeatingCharacterService {
 
     public Character findFirstNonRepeatingCharacter(String inputToCheck) {
         Character firstNonRepeatingCharacter = null;
-        /**
-         * Precheck 1: If inputToCheck=null, return null.
-         * 
-         * Precheck 2: If inputToCheck=""(empty string), return null.-->Reason:
-         * minimum length should be 2. This is the assumption that we make for the
-         * logic.
-         * 
-         * Precheck 3: If inputToCheck.legth=1([just one charcter]), return
-         * null.-->Reason: same as pre check 2
-         */
-        if (inputToCheck == null || inputToCheck.isBlank() || inputToCheck.length() <= 1) {
+
+        if (performPreChecks(inputToCheck)) {
             return firstNonRepeatingCharacter;
         }
 
@@ -51,17 +42,8 @@ public class FirstNonRepeatingCharacterService {
 
     public Character findFirstNonRepeatingCharacterUsingHashmap(String inputToCheck) {
         Character firstNonRepeatingCharacter = null;
-        /**
-         * Precheck 1: If inputToCheck=null, return null.
-         * 
-         * Precheck 2: If inputToCheck=""(empty string), return null.-->Reason:
-         * minimum length should be 2. This is the assumption that we make for the
-         * logic.
-         * 
-         * Precheck 3: If inputToCheck.legth=1([just one charcter]), return
-         * null.-->Reason: same as pre check 2
-         */
-        if (inputToCheck == null || inputToCheck.isBlank() || inputToCheck.length() <= 1) {
+
+        if (performPreChecks(inputToCheck)) {
             return firstNonRepeatingCharacter;
         }
 
@@ -91,6 +73,20 @@ public class FirstNonRepeatingCharacterService {
 
         // Step 4: Return null if no non-repeating characters are found.
         return firstNonRepeatingCharacter;
+    }
+
+    private boolean performPreChecks(String inputToCheck) {
+        /**
+         * Precheck 1: If inputToCheck=null, return null.
+         * 
+         * Precheck 2: If inputToCheck=""(empty string), return null.-->Reason:
+         * minimum length should be 2. This is the assumption that we make for the
+         * logic.
+         * 
+         * Precheck 3: If inputToCheck.legth=1([just one charcter]), return
+         * null.-->Reason: same as pre check 2
+         */
+        return inputToCheck == null || inputToCheck.isBlank() || inputToCheck.length() <= 1;
     }
 
 }

@@ -57,6 +57,51 @@ public class Executor {
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
+        generateGapInConsole();
+        System.out.println("Find the first non-repeating character in a string but now using hashmap for it.");
+        generateGapInConsole();
+
+        inputToCheck = "swiss";
+        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
+        // Another happy path input
+        inputToCheck = "racecar";
+        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
+        // Edge case - all charcters appear more than once
+        inputToCheck = "noon";
+        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
+        // Edge case - only one character in the input string
+        inputToCheck = "n";
+        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
+        // Edge case - empty string
+        inputToCheck = "";
+        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
+        // Edge case - null
+        inputToCheck = null;
+        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
+        // Edge case - string containing only whitespaces
+        inputToCheck = "   ";
+        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        displayResult(inputToCheck, result);
+        generateGapInConsole();
+
     }
 
     private static void displayResult(String inputToCheck, Character result) {
