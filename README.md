@@ -35,7 +35,9 @@ The solution is implemnted using character array as well as LinkedHashmap. Pleas
 
 ## Primary approach
 
-> implemeted in **findFirstNonRepeatingCharacter()** > [Explanation on Youtube](Please insert working link here)
+> implemeted in **findFirstNonRepeatingCharacter()**
+
+> [Explanation on Youtube](Please insert working link here)
 
 ## Complexity Analysis
 
