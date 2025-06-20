@@ -54,9 +54,11 @@ Please note that some edge cases are partially covered in the _pre-check_ part o
 
 ## Secondary approach
 
-> implemeted in **findFirstNonRepeatingCharacterUsingLinkedHashMap()**
+> implemeted in **findFirstNonRepeatingCharacterUsingHashMap()**
 
-Q) Why use a LinkedHashmap instead of a Hashmap?
+Q) Why use a Hashmap instead of a character array?
+
+- There is no particular reason other than the fact that it is possible.
 
 ## Technologies Used
 
