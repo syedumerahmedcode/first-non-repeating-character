@@ -108,9 +108,9 @@ public class Executor {
     private static void displayResult(String inputToCheck, Character result) {
         if (result != null) {
             System.out
-                    .println("The first non repating character in the input string:" + inputToCheck + " is:" + result);
+                    .println("The first non repating character in the input:" + inputToCheck + " is '" + result + "'.");
         } else {
-            System.out.println("There is no non-repeating character in the input string:" + inputToCheck);
+            System.out.println("There is no non-repeating character found within the input:" + inputToCheck);
         }
     }
 
