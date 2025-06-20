@@ -40,7 +40,7 @@ public class FirstNonRepeatingCharacterService {
         return firstNonRepeatingCharacter;
     }
 
-    public Character findFirstNonRepeatingCharacterUsingHashmap(String inputToCheck) {
+    public Character findFirstNonRepeatingCharacterUsingLinkedHashMap(String inputToCheck) {
         Character firstNonRepeatingCharacter = null;
 
         if (performPreChecks(inputToCheck)) {

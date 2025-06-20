@@ -28,7 +28,7 @@ public class Executor {
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
-        // Edge case - all charcters appear more than once
+        // Edge case - all characters appear more than once
         inputToCheck = "noon";
         result = service.findFirstNonRepeatingCharacter(inputToCheck);
         displayResult(inputToCheck, result);
@@ -63,43 +63,43 @@ public class Executor {
         generateGapInConsole();
 
         inputToCheck = "swiss";
-        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
         // Another happy path input
         inputToCheck = "racecar";
-        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
-        // Edge case - all charcters appear more than once
+        // Edge case - all characters appear more than once
         inputToCheck = "noon";
-        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
         // Edge case - only one character in the input string
         inputToCheck = "n";
-        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
         // Edge case - empty string
         inputToCheck = "";
-        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
         // Edge case - null
         inputToCheck = null;
-        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
         // Edge case - string containing only whitespaces
         inputToCheck = "   ";
-        result = service.findFirstNonRepeatingCharacterUsingHashmap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
