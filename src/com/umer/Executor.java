@@ -63,43 +63,43 @@ public class Executor {
         generateGapInConsole();
 
         inputToCheck = "swiss";
-        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
         // Another happy path input
         inputToCheck = "racecar";
-        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
         // Edge case - all characters appear more than once
         inputToCheck = "noon";
-        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
         // Edge case - only one character in the input string
         inputToCheck = "n";
-        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
         // Edge case - empty string
         inputToCheck = "";
-        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
         // Edge case - null
         inputToCheck = null;
-        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 
         // Edge case - string containing only whitespaces
         inputToCheck = "   ";
-        result = service.findFirstNonRepeatingCharacterUsingLinkedHashMap(inputToCheck);
+        result = service.findFirstNonRepeatingCharacterUsingHashMap(inputToCheck);
         displayResult(inputToCheck, result);
         generateGapInConsole();
 

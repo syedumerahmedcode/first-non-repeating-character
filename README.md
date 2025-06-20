@@ -35,8 +35,7 @@ The solution is implemnted using character array as well as LinkedHashmap. Pleas
 
 ## Primary approach
 
-> implemeted in **findFirstNonRepeatingCharacter()**
-> [Explanation on Youtube](Please insert working link here)
+> implemeted in **findFirstNonRepeatingCharacter()** > [Explanation on Youtube](Please insert working link here)
 
 ## Complexity Analysis
 
@@ -56,6 +55,8 @@ Please note that some edge cases are partially covered in the _pre-check_ part o
 ## Secondary approach
 
 > implemeted in **findFirstNonRepeatingCharacterUsingLinkedHashMap()**
+
+Q) Why use a LinkedHashmap instead of a Hashmap?
 
 ## Technologies Used
 
