@@ -48,7 +48,7 @@ The solution is implemnted using character array as well as LinkedHashmap. Pleas
 - **All characters appear more than once:** For such an input string, it returns the statement that there is no non-repeating character in the input.
 - **Input string consist of only one character:** For such an input string, it returns the statement that there is no non-repeating character in the input.
 - **When inputString=null:** When string to check is _null_, it returns the statement that there is no non-repeating character in the input.
-- **When inputString=""/" ":** When string to check is _empty_ or _blank(i.e. contains n whitspaces only)_, it returns the statement that there is no non-repeating character in the input.
+- **When inputString=""/" ":** When string to check is _empty_ or _blank(i.e. contains n number of whitespaces only)_, it returns the statement that there is no non-repeating character in the input.
 
 Please note that some edge cases are partially covered in the _pre-check_ part of the logic.
 
